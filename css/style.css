@@ -1,0 +1,460 @@
+@font-face {
+    font-family: Montserrat-Semibold;
+    src: url(../fonts/static/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../fonts/static/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/static/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: PT-Serif;
+    src: url(../fonts/PTSerif/PTSerif-Regular.ttf);
+}
+:root {
+    --gutter: 20px;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+  }
+body,p,h1,h2,h3,ul,ol {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #1a1a1a;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 50px;
+  }
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .img_menu > img{
+    width: 150px;
+    height: 100px;
+  }
+  .menu_list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .menu_list > li{
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  .menu_link:hover{
+    color: #E60086;
+  }
+  .menu_link{
+    text-decoration: none;
+    font-family: Montserrat-Semibold;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .active > a{
+     color: rgba(255,255,255,.5) !important;
+  }
+  .active::after{
+    content: '';
+    background-color: #E60086;
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main-block {
+    background-color: black;
+  }
+.news-box{
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 35px;
+    padding-bottom: 25px;
+}
+.content{
+  display: none;
+}
+.img-box > img{
+   width: 100%; 
+   height: 100%;
+}
+.info-box{
+    background-color: #222;
+    border-left: 2px solid white;
+}
+.info-tittle{
+    text-transform: uppercase;
+    font-family: Montserrat-Bold;
+    font-size: 25px;
+    color: white;
+    line-height: 1.6;
+    text-align: left;
+    padding: 25px 15px;
+}
+.description{   
+  overflow: auto;
+  height: 175px;
+  font-size: 15px;
+  font-family: Montserrat-Semibold;
+  color: rgb(191, 191, 191);
+  text-align: left;
+  padding: 0px 15px;
+  margin-bottom: 10px;
+}
+.description::-webkit-scrollbar {
+  width: 5px;
+}
+.description::-webkit-scrollbar-track {
+  background-color: none;
+}
+.description::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 5px;
+}
+.more_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: Montserrat;
+  font-size: 15px;
+  line-height: 1.273;
+  text-align: center;
+  padding: 15px 25px;
+  border: 3px solid white;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.button:hover{
+  background-color: white;
+  color: black;
+  transition: 0.7s;
+}
+.watch{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: Montserrat;
+  font-size: 15px;
+  line-height: 1.273;
+  text-align: center;
+  margin-left: 15px;
+}
+.watch:hover{
+  color:#E60086;
+}
+.line{
+  background-color: white;
+}
+.line-inner{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.line-title{
+  text-transform: uppercase;
+  font-family: Montserrat-Bold;
+  font-size: 25px;
+  color: black;
+  line-height: 1.6;
+  text-align: left;
+  padding: 45px 0px;
+}
+.img_line{
+  display: flex;
+  justify-content: right;
+}
+.img_line_cont{
+  width: 300px;
+  height: 120px;
+  padding-right: -10px;
+}
+.footer_inner{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 0px;
+}
+.linked_list{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.linked_list > li > a{
+  font-size: 18px;
+  padding: 0 20px;
+  color: black;
+}
+#vk:hover{
+  color: #427BBB;
+}
+#inst:hover{
+  color: #D03EAB;
+}
+#yt:hover{
+  color: red;
+}
+#tg:hover{
+  color: #27A3E2;
+}
+#dno:hover{
+  color: #E77D08;
+}
+.footer-txt{
+  font-size: 15px;
+  font-family: Montserrat-Semibold;
+  color: black;
+  text-align: left;
+}
+#fix{
+  text-align: right;
+}
+.about-block{
+  height: 750px;
+  background-image: url('../img/back.jpeg');
+  background-position: top;
+  background-repeat:  no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  box-shadow: inset 20px 30px 30px 30px rgb(0,0,0,1);
+  margin-bottom: 30px;
+}
+.shadows{
+  height: 100%;
+  box-shadow: inset 70px -30px 150px 100px rgb(0,0,0,1);
+}
+.about-description{
+  height: 100%;
+  backdrop-filter: brightness(0);
+}
+.about-tittle{
+  font-size: 40px;
+  font-family: Montserrat-Bold;
+  color: white;
+  line-height: 1.6;
+  text-align: left;
+  padding: 50px 0px;
+  text-transform: uppercase;
+  position: relative;
+}
+.about-tittle::after{
+  content: '';
+  background-color: white;
+  display: block;
+  height: 3px;
+  border-radius: 5px;;
+  width: 30%;
+  position: absolute;
+}
+.about-txt{
+  font-size: 15px;
+  font-family: Montserrat;
+  color: white;
+  text-align: left;
+}
+.drop-down{
+  position: relative;
+}
+.submenu{
+  position: absolute;
+  width: 85%;
+  display: none;
+  z-index: 100;
+}
+.drop-down-next{
+  position: relative;
+}
+.submenu2{
+  position: absolute;
+  width: 100%;
+  display: none;
+  z-index: 100;
+}
+.sublist{
+  list-style-type: none;
+  background-color: #1a1a1a;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px  solid rgb(191, 191, 191);
+  padding: 15px 15px;
+}
+.sublist:last-child{
+  border: none;
+}
+.default-menu{
+  height: 250px;
+  background-color: black;
+}
+.def-tittle{
+  text-transform: uppercase;
+  font-family: Montserrat-Bold;
+  font-size: 50px;
+  color: white;
+  line-height: 1.6;
+  text-align: left;
+  padding: 90px 15px;
+}
+.part-tittle::after{
+  width: 20%;
+}
+.participants{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.participant{
+  margin-bottom: 30px;
+  margin-right: 5px;
+  display: none;
+}
+.part-link{
+  text-decoration: none;
+  color: white;
+  z-index: 1000;
+}
+.photo{
+  height: 256px;
+  margin-bottom: 20px;
+  background-position: top;
+  background-repeat:  no-repeat;
+  background-size: cover;
+}
+.name{
+  text-transform: uppercase;
+  font-family: Montserrat-Bold;
+  font-size: 17px;
+  color: white;
+  line-height: 1.18;
+  text-align: left;
+  margin-bottom: 5px;
+  
+}
+.age{
+  font-family: Montserrat;
+  font-size: 15px;
+  color: white;
+  line-height: 1.18;
+  text-align: left;
+}
+.seas-tittle::after{
+  width: 21%;
+}
+.season{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.series{
+  margin-bottom: 30px;
+  margin-right: 5px;
+  display: none;
+}
+.play{
+  font-size: 125px;
+  color: #1a1a1a;
+  opacity: 0.7;
+}
+.series-link{
+  text-decoration: none;
+  color: white;
+  z-index: 1000;
+}
+.series-photo{
+  height: 200px;
+  margin-bottom: 20px;
+  background-position: top;
+  background-repeat:  no-repeat;
+  background-size: 100%;
+}
+.series-tittle{
+  text-transform: uppercase;
+  font-family: Montserrat-Bold;
+  font-size: 17px;
+  color: white;
+  line-height: 1.18;
+  text-align: left;
+  margin-bottom: 5px;
+  
+}
+.number{
+  font-family: Montserrat;
+  font-size: 15px;
+  color: white;
+  line-height: 1.18;
+  text-align: left;
+}
+@keyframes pIn
+{
+  0% {background-size: 100%;}
+  100% {background-size: 110%;}
+}
+@keyframes pLn
+{
+  0% {background-size: 100%;}
+  100% {background-size: 105%;}
+}
+.col-1 {
+    width: calc(8.3%);
+  }
+  .col-2 {
+    width: calc(16.66%);
+  }
+  .col-3 {
+    width: calc(25%);
+  }
+  .col-4 {
+    width: calc(33.33%);
+  }
+  .col-5 {
+    width: calc(41.66%);
+  }
+  .col-6 {
+    width: calc(50%);
+  }
+  .col-7 {
+    width: calc(58.33%);
+  }
+  .col-8 {
+    width: calc(66.66%);
+  }
+  .col-9 {
+    width: calc(75%);
+  }
+  .col-10 {
+    width: calc(83.33%);
+  }
+  .col-11 {
+    width: calc(91.66%);
+  }
+  .col-12 {
+    width: calc(100%);
+  }
